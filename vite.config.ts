@@ -25,16 +25,16 @@ export default defineConfig({
         icons: [
           { src: 'favicon-192x192.png', sizes: '192x192', type: 'image/png' },
           { src: 'favicon-512x512.png', sizes: '512x512', type: 'image/png' },
-          { src: 'favicon-512x512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' }
-        ]
-      }
+          { src: 'favicon-512x512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
+        ],
+      },
     }),
   ],
   build: {
     rollupOptions: {
       output: {
         manualChunks: (id) => {
-          if (id.includes('three')) return 'three'
+          if (id.includes('three')) { return 'three' }
           return null
         },
       },

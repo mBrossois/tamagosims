@@ -39,6 +39,9 @@ importers:
       eslint:
         specifier: ^9.16.0
         version: 9.39.5(jiti@2.7.0)(supports-color@7.2.0)
+      husky:
+        specifier: ^9.1.7
+        version: 9.1.7
       typescript:
         specifier: ^6.0.2
         version: 6.0.3
@@ -2581,6 +2584,11 @@ packages:
 
   html-entities@2.6.0:
     resolution: {integrity: sha512-kig+rMn/QOVRvr7c86gQ8lWXq+Hkv6CbAH1hLu+RG338StTpE8Z0b44SDVaqVu7HGKf27frdmUYEs9hTUX/cLQ==}
+
+  husky@9.1.7:
+    resolution: {integrity: sha512-5gs5ytaNjBrh5Ow3zrvdUUY+0VxIuWVL4i9irt6friV+BqdCfmV11CQTWMiBYWHbXhco+J1kHfTOUkePhCDvMA==}
+    engines: {node: '>=18'}
+    hasBin: true
 
   idb@7.1.1:
     resolution: {integrity: sha512-gchesWBzyvGHRO9W8tzUWFDycow5gwjvFKfyV9FF32Y7F50yZMp7mP+T2mJIWFx49zicqyC4uefHM17o6xKIVQ==}
@@ -6744,6 +6752,8 @@ snapshots:
   hookable@5.5.3: {}
 
   html-entities@2.6.0: {}
+
+  husky@9.1.7: {}
 
   idb@7.1.1: {}
 
