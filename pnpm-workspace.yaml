@@ -1,0 +1,4 @@
+minimumReleaseAgeExclude:
+  - '@tresjs/cientos@5.10.1'
+  - '@tresjs/core@5.10.1'
+  - '@tresjs/leches@1.3.3'
