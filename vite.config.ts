@@ -1,8 +1,8 @@
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import glsl from 'vite-plugin-glsl'
-import { templateCompilerOptions } from '@tresjs/core'
-import { VitePWA } from 'vite-plugin-pwa'
+import { defineConfig } from "vite";
+import vue from "@vitejs/plugin-vue";
+import glsl from "vite-plugin-glsl";
+import { templateCompilerOptions } from "@tresjs/core";
+import { VitePWA } from "vite-plugin-pwa";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -12,20 +12,20 @@ export default defineConfig({
     }),
     glsl(),
     VitePWA({
-      registerType: 'autoUpdate',
+      registerType: "autoUpdate",
       devOptions: { enabled: true },
       manifest: {
-        name: 'Tamagosims',
-        short_name: 'Tasims',
-        description: 'Your little creature waiting in its house. Keep it alive.',
-        theme_color: '#2B2D5B',
-        background_color: '#FFF8EA',
-        display: 'standalone',
-        start_url: '/',
+        name: "Tamagosims",
+        short_name: "Tasims",
+        description: "Your little creature waiting in its house. Keep it alive.",
+        theme_color: "#2B2D5B",
+        background_color: "#FFF8EA",
+        display: "standalone",
+        start_url: "/",
         icons: [
-          { src: 'favicon-192x192.png', sizes: '192x192', type: 'image/png' },
-          { src: 'favicon-512x512.png', sizes: '512x512', type: 'image/png' },
-          { src: 'favicon-512x512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
+          { src: "favicon-192x192.png", sizes: "192x192", type: "image/png" },
+          { src: "favicon-512x512.png", sizes: "512x512", type: "image/png" },
+          { src: "favicon-512x512.png", sizes: "512x512", type: "image/png", purpose: "maskable" },
         ],
       },
     }),
@@ -34,13 +34,13 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: (id) => {
-          if (id.includes('three')) { return 'three' }
-          return null
+          if (id.includes("three")) { return "three"; }
+          return null;
         },
       },
     },
   },
   optimizeDeps: {
-    exclude: ['vue', 'three'],
+    exclude: ["vue", "three"],
   },
-})
+});
