@@ -17,13 +17,6 @@ import Character from "./Character.vue";
   <TresPerspectiveCamera :position="[5, 5, 5]" :look-at="[0, 0, 0]" />
   <TresAmbientLight :intensity="0.5" color="white" />
   <Character />
-  <!-- <TresMesh
-    ref="boxRef"
-    :position="[0, 2, 0]"
-  >
-    <TresBoxGeometry :args="[1, 1, 1]" />
-    <TresMeshNormalMaterial />
-  </TresMesh> -->
   <TresDirectionalLight :position="[0, 2, 4]" :intensity="1" cast-shadow />
   <TresAxesHelper />
   <TresGridHelper :args="[10, 10]" />
